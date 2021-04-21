@@ -1,0 +1,70 @@
+body {
+    margin: 3px;
+    padding: 3px;
+    background-image: url(img/thumb-350-1142597.jpg);
+    background-size: cover;
+    
+}
+
+.main-game {
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 5px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 100%;    
+    width: 650px;
+    height: 650px;    
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+
+.green {
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius:  100%;
+}
+
+.selected {
+    opacity: 0.5;
+}
+
+footer {
+    margin-left: 63%;
+    height: 12vh;
+    width: 35vw;
+    color: white;    
+    font-family: 'Courier New', Courier, monospace;       
+}
+
+/* obs:
+
+vh/vw = corresponde a 100% da altura/largura da viewpoint "tela" = controle <> telas" 
+grid-template-areas = localizacao divs cores jogo
+grid-gap = divisao em 4 areas (quadrantes)
+*/
