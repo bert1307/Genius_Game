@@ -22,8 +22,8 @@ body {
     border: 2px solid white;
     background-color: white;
     border-radius: 100%;    
-    width: 650px;
-    height: 650px;    
+    width: 40vw;
+    height: 80vh;    
 }
 
 .blue {
@@ -55,11 +55,34 @@ body {
 }
 
 footer {
-    margin-left: 63%;
+    margin-left: 57%;
     height: 12vh;
     width: 35vw;
     color: white;    
-    font-family: 'Courier New', Courier, monospace;       
+    font-family: 'Courier New', Courier, monospace;    
+    text-align: center;   
+}
+
+@media (max-width: 900px) {
+
+    body {
+        width: 50vw;
+        height: 50vh;        
+    }
+
+    .genius {
+        width: 80vw;
+        height: 50vh;   
+    }        
+    
+    footer {
+        height: 10vh;
+        width: 90vw;
+        margin: 5%;      
+        padding: 5%;
+        font-size: 18px;
+        color: white;       
+    }
 }
 
 /* obs:
